@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { MessageCircle, Mail, MapPin, Clock, Star, ChevronDown, Sparkles, Menu, X } from 'lucide-react'
+import heroBg from './assets/fondprincipal.jpg'
 import './App.css'
 
 function InstagramIcon({ size = 18, className }: { size?: number; className?: string }) {
@@ -94,7 +95,8 @@ export default function App() {
       {/* HERO */}
       <main id="main-content">
       <section id="hero" aria-label="Présentation" className="relative min-h-screen flex flex-col items-center justify-center text-center px-5 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-peach-light via-cream to-nude-50" />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBg})` }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-peach-light/80 via-nude-200/70 to-rose-petal/60" />
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-rose-petal/20 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-peach-mid/20 blur-3xl" />
         <div className="relative z-10 max-w-xl">
