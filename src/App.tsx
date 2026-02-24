@@ -65,7 +65,7 @@ export default function App() {
       {/* NAVBAR */}
       <nav role="navigation" aria-label="Navigation principale" className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-cream/95 backdrop-blur shadow-sm' : 'bg-transparent'}`}>
         <div className="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
-          <button onClick={() => scrollTo('hero')} className="font-serif text-xl font-semibold text-nude-500 tracking-wide">
+          <button onClick={() => scrollTo('hero')} className="text-2xl text-nude-500" style={{ fontFamily: "'Parisienne', cursive" }}>
             L'instant Tessa
           </button>
           <div className="hidden md:flex items-center gap-7 text-sm font-medium">
@@ -104,8 +104,8 @@ export default function App() {
             <Sparkles size={14} />
             Prothésiste ongulaire
           </div>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-[#3a2e2a] leading-tight mb-2">
-            L'instant <span className="text-nude-400 italic">Tessa</span>
+          <h1 className="text-[9rem] md:text-[12rem] text-[#3a2e2a] leading-tight mb-2" style={{ fontFamily: "'Parisienne', cursive" }}>
+            L'instant <span className="text-nude-400">Tessa</span>
           </h1>
           <p className="text-nude-400 font-serif text-lg italic mb-6">Ongles & Beauté</p>
           <p className="text-[#6b5a54] text-base md:text-lg leading-relaxed mb-10 max-w-md mx-auto">

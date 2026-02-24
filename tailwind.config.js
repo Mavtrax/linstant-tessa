@@ -28,8 +28,9 @@ export default {
         cream: '#fdfaf7',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans:  ['"DM Sans"', 'system-ui', 'sans-serif'],
+        script: ['"Parisienne"', 'cursive'],
+        serif:  ['"Playfair Display"', 'Georgia', 'serif'],
+        sans:   ['"DM Sans"', 'system-ui', 'sans-serif'],
       },
     },
   },
