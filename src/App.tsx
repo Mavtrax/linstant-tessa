@@ -289,21 +289,46 @@ export default function App() {
       </main>
 
       {/* FOOTER */}
-      <footer role="contentinfo" className="py-8 px-5 bg-[#3a2e2a] text-center">
-        <p className="font-serif italic text-nude-300 text-lg mb-1">L'instant Tessa</p>
-        <p className="text-nude-400 text-xs mb-4">Prothésiste ongulaire · {CONFIG.location}</p>
-        <div className="flex justify-center gap-4">
-          <a href={CONFIG.instagram} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-nude-300">
-            <InstagramIcon size={18} />
-          </a>
-          <a href={CONFIG.whatsapp} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-nude-300">
-            <MessageCircle size={18} />
-          </a>
-          <a href={`mailto:${CONFIG.email}`} className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-nude-300">
-            <Mail size={18} />
-          </a>
+      <footer role="contentinfo" className="bg-[#3a2e2a] text-nude-400 pt-12 pb-6 px-5">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10">
+          {/* Marque */}
+          <div>
+            <p className="font-serif italic text-nude-300 text-xl mb-2">L'instant Tessa</p>
+            <p className="text-xs text-nude-500 mb-4">Prothésiste ongulaire · {CONFIG.location}</p>
+            <div className="flex gap-3">
+              <a href={CONFIG.instagram} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-nude-300" aria-label="Instagram">
+                <InstagramIcon size={16} />
+              </a>
+              <a href={CONFIG.whatsapp} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-nude-300" aria-label="WhatsApp">
+                <MessageCircle size={16} />
+              </a>
+              <a href={`mailto:${CONFIG.email}`} className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-nude-300" aria-label="Email">
+                <Mail size={16} />
+              </a>
+            </div>
+          </div>
+          {/* Informations */}
+          <div>
+            <p className="text-nude-300 text-xs font-semibold tracking-widest uppercase mb-4">Informations</p>
+            <ul className="space-y-2 text-sm">
+              <li><button onClick={() => scrollTo('hero')} className="hover:text-nude-300 transition-colors">Accueil</button></li>
+              <li><button onClick={() => scrollTo('services')} className="hover:text-nude-300 transition-colors">Prestations</button></li>
+              <li><button onClick={() => scrollTo('galerie')} className="hover:text-nude-300 transition-colors">Galerie</button></li>
+              <li><button onClick={() => scrollTo('contact')} className="hover:text-nude-300 transition-colors">Contact</button></li>
+            </ul>
+          </div>
+          {/* Légal */}
+          <div>
+            <p className="text-nude-300 text-xs font-semibold tracking-widest uppercase mb-4">Légal</p>
+            <ul className="space-y-2 text-sm">
+              <li><a href="/mentions-legales" className="hover:text-nude-300 transition-colors">Mentions légales</a></li>
+              <li><a href="/confidentialite" className="hover:text-nude-300 transition-colors">Politique de confidentialité</a></li>
+            </ul>
+          </div>
         </div>
-        <p className="mt-6 text-xs text-nude-500">© {new Date().getFullYear()} L'instant Tessa</p>
+        <div className="max-w-5xl mx-auto border-t border-white/10 pt-6 text-center text-xs text-nude-500">
+          © {new Date().getFullYear()} L'instant Tessa · Tous droits réservés
+        </div>
       </footer>
 
       {/* BOUTON WHATSAPP FLOTTANT */}
