@@ -104,7 +104,7 @@ export default function App() {
             <Sparkles size={14} />
             Prothésiste ongulaire
           </div>
-          <h1 className="text-[9rem] md:text-[12rem] text-[#3a2e2a] leading-tight mb-2" style={{ fontFamily: "'Parisienne', cursive" }}>
+          <h1 className="text-[5rem] sm:text-[7rem] md:text-[12rem] text-[#3a2e2a] leading-tight mb-2" style={{ fontFamily: "'Parisienne', cursive" }}>
             L'instant <span className="text-nude-400">Tessa</span>
           </h1>
           <p className="text-nude-400 font-serif text-lg italic mb-6">Ongles & Beauté</p>
