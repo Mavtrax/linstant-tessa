@@ -112,10 +112,6 @@ export default function App() {
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-rose-petal/20 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-peach-mid/20 blur-3xl" />
         <div className="relative z-10 max-w-xl">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 text-nude-500 text-sm font-medium mb-6 shadow-sm">
-            <Sparkles size={14} />
-            Prothésiste ongulaire
-          </div>
           <h1 className="text-[5rem] sm:text-[7rem] md:text-[12rem] text-[#3a2e2a] leading-tight mb-2" style={{ fontFamily: "'Parisienne', cursive" }}>
             L'instant <span className="text-nude-400">Tessa</span>
           </h1>
