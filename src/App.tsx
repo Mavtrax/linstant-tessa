@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import CursorEffect from './CursorEffect'
 import { MessageCircle, Mail, MapPin, Clock, Star, ChevronDown, Sparkles, Menu, X } from 'lucide-react'
 import heroBg from './assets/fondprincipal.jpg'
 import './App.css'
@@ -66,6 +67,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-cream font-sans text-[#3a2e2a]">
+      <CursorEffect />
 
       {/* SKIP LINK accessibilité */}
       <a href="#main-content" className="skip-link">Aller au contenu principal</a>
