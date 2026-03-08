@@ -164,7 +164,6 @@ export default function App() {
             src="/logo1.png"
             alt="L'instant Tessa — Prothésiste ongulaire"
             className="w-56 sm:w-72 md:w-80 mx-auto mb-6"
-            style={{ mixBlendMode: 'multiply' }}
           />
           <p className="text-[#6b5a54] text-base md:text-lg leading-relaxed mb-10 max-w-md mx-auto">
             Révélez la beauté de vos mains avec des ongles sublimés, du nude élégant au nail art créatif.
