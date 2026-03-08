@@ -163,7 +163,7 @@ export default function App() {
           <img
             src="/logo1.png"
             alt="L'instant Tessa — Prothésiste ongulaire"
-            className="w-56 sm:w-72 md:w-80 mx-auto mb-6 drop-shadow-lg"
+            className="w-56 sm:w-72 md:w-80 mx-auto mb-6"
             style={{ mixBlendMode: 'multiply' }}
           />
           <p className="text-[#6b5a54] text-base md:text-lg leading-relaxed mb-10 max-w-md mx-auto">
