@@ -31,8 +31,12 @@ const SERVICES = [
   { name: 'Manucure naturelle', price: '25€',              duration: '45min', emoji: '🤍' },
 ]
 
-const GALLERY_COLORS = [
-  '#f4b8c8', '#eda882', '#f2d9c5', '#e8a0b4', '#f5c4aa', '#f9ede3',
+const GALLERY_PHOTOS = [
+  '/tessa-1.png',
+  '/tessa-2.png',
+  '/tessa-3.png',
+  '/tessa-4.png',
+  '/tessa-5.png',
 ]
 
 const HORAIRES = [
@@ -191,13 +195,17 @@ export default function App() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#3a2e2a]">Galerie</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {GALLERY_COLORS.map((color, i) => (
-              <div key={i} className="aspect-square rounded-2xl flex items-center justify-center text-4xl" style={{ backgroundColor: color + '55' }}>
-                💅
+            {GALLERY_PHOTOS.map((src, i) => (
+              <div key={i} className="aspect-square rounded-2xl overflow-hidden">
+                <img
+                  src={src}
+                  alt={`Réalisation ongles ${i + 1}`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-[#9a8880] mt-4 italic">Remplacer par les vraies photos de réalisations</p>
           <div className="text-center mt-6">
             <a href={CONFIG.instagram} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-rose-soft text-rose-deep font-medium hover:bg-rose-petal/20 transition-colors">
