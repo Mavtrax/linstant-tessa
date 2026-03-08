@@ -24,16 +24,63 @@ const CONFIG = {
   planity:   'https://www.planity.com/sc-coiffure-linstant-tessa-13090-aix-en-provence',
 }
 
-const SERVICES = [
-  { name: 'Pose complète gel',      price: 'à partir de 50€', duration: '1h30', emoji: '✨' },
-  { name: 'Remplissage',            price: 'à partir de 35€', duration: '1h',   emoji: '💅' },
-  { name: 'Semi-permanent',         price: 'à partir de 35€', duration: '1h',   emoji: '🌸' },
-  { name: 'Vernis classique',       price: 'à partir de 20€', duration: '30min', emoji: '🎀' },
-  { name: 'Pose capsules',          price: 'à partir de 45€', duration: '1h15', emoji: '💎' },
-  { name: 'Nail art',               price: 'sur devis',        duration: '—',    emoji: '🎨' },
-  { name: 'Pédicure',               price: 'à partir de 30€', duration: '45min', emoji: '🦶' },
-  { name: 'Manucure naturelle',     price: '25€',              duration: '45min', emoji: '🤍' },
-  { name: 'Dépose seule',           price: '15€',              duration: '30min', emoji: '🪄' },
+const SERVICE_CATEGORIES = [
+  {
+    name: 'Beauté des mains',
+    emoji: '💅',
+    services: [
+      { name: 'Beauté des mains + Vernis classique', price: '27€', duration: '30min' },
+      { name: 'Beauté des mains',                    price: '20€', duration: '30min' },
+      { name: 'Limage + Vernis classique',            price: '14€', duration: '15min' },
+    ],
+  },
+  {
+    name: 'Beauté des pieds',
+    emoji: '🦶',
+    services: [
+      { name: 'Beauté des pieds + Vernis classique',  price: '27€', duration: '30min' },
+      { name: 'Beauté des pieds',                     price: '20€', duration: '30min' },
+      { name: 'Limage + Vernis classique Pieds',      price: '14€', duration: '15min' },
+    ],
+  },
+  {
+    name: 'Vernis semi-permanent',
+    emoji: '✨',
+    services: [
+      { name: 'Beauté des mains + VSP Mains',         price: '32€', duration: '40min' },
+      { name: 'Dépose + Pose VSP Mains',              price: '40€', duration: '1h10'  },
+      { name: 'Beauté des pieds + VSP Pieds',         price: '32€', duration: '40min' },
+      { name: 'Dépose + Pose VSP Pieds',              price: '40€', duration: '1h10'  },
+      { name: 'Supplément French',                    price: '4€',  duration: '10min' },
+    ],
+  },
+  {
+    name: 'Forfaits ongles',
+    emoji: '🎀',
+    services: [
+      { name: 'Beauté mains & pieds + VSP',           price: '60€', duration: '1h15'  },
+      { name: 'Beauté mains & pieds + Vernis classique', price: '54€', duration: '1h15' },
+      { name: 'Beauté des mains et des pieds',        price: '40€', duration: '1h'    },
+      { name: 'Dépose + Pose VSP Mains + Pieds',      price: '76€', duration: '1h45'  },
+      { name: 'Dépose + Pose VSP Mains + VSP Pieds',  price: '70€', duration: '1h30'  },
+    ],
+  },
+  {
+    name: 'Manucure Homme',
+    emoji: '🤍',
+    services: [
+      { name: 'Beauté des mains – Pour Lui',          price: '20€', duration: '30min' },
+      { name: 'Beauté des pieds – Pour Lui',          price: '20€', duration: '30min' },
+    ],
+  },
+  {
+    name: 'Dépose',
+    emoji: '🪄',
+    services: [
+      { name: 'Dépose VSP Mains',                     price: '12€', duration: '30min' },
+      { name: 'Dépose VSP Pieds',                     price: '12€', duration: '30min' },
+    ],
+  },
 ]
 
 const GALLERY_PHOTOS = [
@@ -173,20 +220,29 @@ export default function App() {
             <p className="text-nude-400 font-serif italic text-sm mb-2 tracking-wider uppercase">Prestations</p>
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#3a2e2a]">Mes services</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {SERVICES.map((s) => (
-              <div key={s.name} className="bg-white rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow border border-nude-100">
-                <span className="text-2xl mb-3 block">{s.emoji}</span>
-                <h3 className="font-semibold text-[#3a2e2a] mb-1">{s.name}</h3>
-                <div className="flex items-center justify-between mt-3 pt-3 border-t border-nude-100">
-                  <span className="text-nude-500 font-semibold text-sm">{s.price}</span>
-                  <span className="text-xs text-[#9a8880] bg-nude-50 px-2 py-1 rounded-full">{s.duration}</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {SERVICE_CATEGORIES.map((cat) => (
+              <div key={cat.name} className="bg-white rounded-2xl shadow-sm border border-nude-100 overflow-hidden">
+                <div className="px-5 py-4 bg-nude-50 border-b border-nude-100 flex items-center gap-2">
+                  <span className="text-xl">{cat.emoji}</span>
+                  <h3 className="font-semibold text-[#3a2e2a] text-sm">{cat.name}</h3>
+                </div>
+                <div className="divide-y divide-nude-100">
+                  {cat.services.map((s) => (
+                    <div key={s.name} className="px-5 py-3 flex items-center justify-between gap-3 hover:bg-nude-50/50 transition-colors">
+                      <span className="text-[#6b5a54] text-sm leading-snug">{s.name}</span>
+                      <div className="flex flex-col items-end flex-shrink-0 gap-0.5">
+                        <span className="text-nude-500 font-semibold text-sm">{s.price}</span>
+                        <span className="text-xs text-[#9a8880]">{s.duration}</span>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
           </div>
           <p className="text-center text-sm text-[#9a8880] mt-6 italic">
-            * Tarifs indicatifs. Devis personnalisé disponible sur demande.
+            Tarifs issus de Planity. Réservation en ligne disponible.
           </p>
         </div>
       </section>
