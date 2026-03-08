@@ -15,20 +15,24 @@ function InstagramIcon({ size = 18, className }: { size?: number; className?: st
 
 // CONFIG — personnaliser avec les vraies infos de Tessa
 const CONFIG = {
-  instagram: 'https://instagram.com/linstant_tessa',
+  instagram: 'https://instagram.com/linstantessa',
   whatsapp:  'https://wa.me/33605572104',
   email:     'contact@linstant-tessa.fr',
-  location:  'Aix-en-Provence, (13)',
+  location:  'Aix-en-Provence (13)',
   phone:     '+33 6 05 57 21 04',
+  planity:   'https://www.planity.com/sc-coiffure-linstant-tessa-13090-aix-en-provence',
 }
 
 const SERVICES = [
-  { name: 'Pose complète gel',  price: 'à partir de 50€', duration: '1h30', emoji: '✨' },
-  { name: 'Remplissage',        price: 'à partir de 35€', duration: '1h',   emoji: '💅' },
-  { name: 'Pose capsules',      price: 'à partir de 45€', duration: '1h15', emoji: '🌸' },
-  { name: 'Nail art',           price: 'sur devis',        duration: '—',    emoji: '🎨' },
-  { name: 'Dépose seule',       price: '15€',              duration: '30min', emoji: '🪄' },
-  { name: 'Manucure naturelle', price: '25€',              duration: '45min', emoji: '🤍' },
+  { name: 'Pose complète gel',      price: 'à partir de 50€', duration: '1h30', emoji: '✨' },
+  { name: 'Remplissage',            price: 'à partir de 35€', duration: '1h',   emoji: '💅' },
+  { name: 'Semi-permanent',         price: 'à partir de 35€', duration: '1h',   emoji: '🌸' },
+  { name: 'Vernis classique',       price: 'à partir de 20€', duration: '30min', emoji: '🎀' },
+  { name: 'Pose capsules',          price: 'à partir de 45€', duration: '1h15', emoji: '💎' },
+  { name: 'Nail art',               price: 'sur devis',        duration: '—',    emoji: '🎨' },
+  { name: 'Pédicure',               price: 'à partir de 30€', duration: '45min', emoji: '🦶' },
+  { name: 'Manucure naturelle',     price: '25€',              duration: '45min', emoji: '🤍' },
+  { name: 'Dépose seule',           price: '15€',              duration: '30min', emoji: '🪄' },
 ]
 
 const GALLERY_PHOTOS = [
@@ -76,7 +80,7 @@ export default function App() {
             <button onClick={() => scrollTo('services')} className="text-[#5a4a44] hover:text-nude-500 transition-colors">Prestations</button>
             <button onClick={() => scrollTo('galerie')}  className="text-[#5a4a44] hover:text-nude-500 transition-colors">Galerie</button>
             <button onClick={() => scrollTo('contact')}  className="text-[#5a4a44] hover:text-nude-500 transition-colors">Contact</button>
-            <a href={`mailto:${CONFIG.email}`} className="px-4 py-2 rounded-full bg-nude-400 text-white text-sm font-medium hover:bg-nude-500 transition-colors">
+            <a href={CONFIG.planity} className="px-4 py-2 rounded-full bg-nude-400 text-white text-sm font-medium hover:bg-nude-500 transition-colors">
               Prendre RDV
             </a>
           </div>
@@ -89,7 +93,7 @@ export default function App() {
             <button onClick={() => scrollTo('services')} className="text-left text-[#5a4a44]">Prestations</button>
             <button onClick={() => scrollTo('galerie')}  className="text-left text-[#5a4a44]">Galerie</button>
             <button onClick={() => scrollTo('contact')}  className="text-left text-[#5a4a44]">Contact</button>
-            <a href={`mailto:${CONFIG.email}`} className="mt-1 px-4 py-2.5 rounded-full bg-nude-400 text-white text-center font-medium">
+            <a href={CONFIG.planity} className="mt-1 px-4 py-2.5 rounded-full bg-nude-400 text-white text-center font-medium">
               Prendre RDV
             </a>
           </div>
@@ -116,7 +120,7 @@ export default function App() {
             Révélez la beauté de vos mains avec des ongles sublimés, du nude élégant au nail art créatif.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href={`mailto:${CONFIG.email}`} className="px-7 py-3.5 rounded-full bg-nude-400 text-white font-medium hover:bg-nude-500 transition-all shadow-md hover:shadow-lg">
+            <a href={CONFIG.planity} className="px-7 py-3.5 rounded-full bg-nude-400 text-white font-medium hover:bg-nude-500 transition-all shadow-md hover:shadow-lg">
               Prendre rendez-vous
             </a>
             <a href={CONFIG.whatsapp} target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full border-2 border-nude-300 text-nude-500 font-medium hover:bg-nude-50 transition-all flex items-center justify-center gap-2">
@@ -226,10 +230,10 @@ export default function App() {
             Contactez-moi par email ou WhatsApp pour convenir d'un créneau.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href={`mailto:${CONFIG.email}`}
+            <a href={CONFIG.planity} target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-nude-400 text-white font-medium hover:bg-nude-500 transition-all shadow-md">
-              <Mail size={16} />
-              Envoyer un email
+              <Sparkles size={16} />
+              Prendre rendez-vous
             </a>
             <a href={CONFIG.whatsapp} target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-nude-500 font-medium hover:bg-nude-50 border border-nude-200 transition-all">
@@ -310,7 +314,7 @@ export default function App() {
               <a href={CONFIG.whatsapp} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-nude-300" aria-label="WhatsApp">
                 <MessageCircle size={16} />
               </a>
-              <a href={`mailto:${CONFIG.email}`} className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-nude-300" aria-label="Email">
+              <a href={CONFIG.planity} className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-nude-300" aria-label="Email">
                 <Mail size={16} />
               </a>
             </div>
