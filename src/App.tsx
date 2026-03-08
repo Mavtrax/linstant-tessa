@@ -108,7 +108,7 @@ export default function App() {
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-cover bg-center bg-no-repeat animate-ken-burns" style={{ backgroundImage: `url(${heroBg})` }} />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-peach-light/80 via-nude-200/70 to-rose-petal/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-peach-light/55 via-nude-200/45 to-rose-petal/40" />
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-rose-petal/20 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-peach-mid/20 blur-3xl" />
         <div className="relative z-10 max-w-xl">
