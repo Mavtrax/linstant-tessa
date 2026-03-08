@@ -31,6 +31,18 @@
   border-radius: 4px;
 }
 
+/* Ken Burns — fond hero animé */
+@keyframes ken-burns {
+  0%   { transform: scale(1.05) translate3d(0%, 0%, 0); }
+  50%  { transform: scale(1.12) translate3d(-1.5%, -0.8%, 0); }
+  100% { transform: scale(1.05) translate3d(0%, 0%, 0); }
+}
+
+.animate-ken-burns {
+  animation: ken-burns 18s ease-in-out infinite;
+  will-change: transform;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
