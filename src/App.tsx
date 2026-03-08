@@ -159,10 +159,12 @@ export default function App() {
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-rose-petal/20 blur-3xl" />
         <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-peach-mid/20 blur-3xl" />
         <div className="relative z-10 max-w-xl">
-          <h1 className="text-[5rem] sm:text-[7rem] md:text-[12rem] text-[#3a2e2a] leading-tight mb-2" style={{ fontFamily: "'Parisienne', cursive" }}>
-            L'instant <span className="text-nude-400">Tessa</span>
-          </h1>
-          <p className="text-nude-400 font-serif text-lg italic mb-6">Ongles & Beauté</p>
+          <h1 className="sr-only">L'instant Tessa — Prothésiste ongulaire</h1>
+          <img
+            src="/logo1.png"
+            alt="L'instant Tessa — Prothésiste ongulaire"
+            className="w-56 sm:w-72 md:w-80 mx-auto mb-6 drop-shadow-lg"
+          />
           <p className="text-[#6b5a54] text-base md:text-lg leading-relaxed mb-10 max-w-md mx-auto">
             Révélez la beauté de vos mains avec des ongles sublimés, du nude élégant au nail art créatif.
           </p>
