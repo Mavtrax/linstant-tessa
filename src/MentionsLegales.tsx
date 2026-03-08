@@ -26,7 +26,7 @@ export default function MentionsLegales() {
             <p><strong className="text-[#3a2e2a]">Responsable de publication :</strong> Tessa [<span className="italic text-nude-400">Nom de famille à compléter</span>]</p>
             <p><strong className="text-[#3a2e2a]">SIRET :</strong> [<span className="italic text-nude-400">À compléter</span>]</p>
             <p><strong className="text-[#3a2e2a]">Adresse :</strong> Aix-en-Provence (13)</p>
-            <p><strong className="text-[#3a2e2a]">Email :</strong> <a href="mailto:contact@linstant-tessa.fr" className="text-nude-500 hover:underline">contact@linstant-tessa.fr</a></p>
+            <p><strong className="text-[#3a2e2a]">Email :</strong> <a href="mailto:linstantessa@gmail.com" className="text-nude-500 hover:underline">linstantessa@gmail.com</a></p>
             <p><strong className="text-[#3a2e2a]">Téléphone :</strong> +33 6 05 57 21 04</p>
           </div>
         </section>
@@ -58,7 +58,7 @@ export default function MentionsLegales() {
           <h2 className="font-serif text-xl font-semibold text-[#3a2e2a] mb-3 pb-2 border-b border-nude-100">Données personnelles</h2>
           <p className="text-[#6b5a54] text-sm leading-relaxed">
             Ce site ne collecte aucune donnée personnelle automatiquement. Les données transmises via le formulaire de contact (email) sont uniquement utilisées pour répondre à votre demande et ne sont pas partagées avec des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données en contactant :<br />
-            <a href="mailto:contact@linstant-tessa.fr" className="text-nude-500 hover:underline">contact@linstant-tessa.fr</a>
+            <a href="mailto:linstantessa@gmail.com" className="text-nude-500 hover:underline">linstantessa@gmail.com</a>
           </p>
         </section>
 

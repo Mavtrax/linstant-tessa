@@ -22,7 +22,7 @@ export default function PolitiqueConfidentialite() {
           <h2 className="font-serif text-xl font-semibold text-[#3a2e2a] mb-3 pb-2 border-b border-nude-100">Responsable du traitement</h2>
           <p className="text-[#6b5a54] text-sm leading-relaxed">
             L'instant Tessa, micro-entreprise de prothésie ongulaire basée à Aix-en-Provence (13).<br />
-            Contact : <a href="mailto:contact@linstant-tessa.fr" className="text-nude-500 hover:underline">contact@linstant-tessa.fr</a>
+            Contact : <a href="mailto:linstantessa@gmail.com" className="text-nude-500 hover:underline">linstantessa@gmail.com</a>
           </p>
         </section>
 
@@ -68,7 +68,7 @@ export default function PolitiqueConfidentialite() {
             <li><strong className="text-[#3a2e2a]">Opposition</strong> : vous opposer à un traitement</li>
           </ul>
           <p className="text-[#6b5a54] text-sm leading-relaxed mt-3">
-            Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@linstant-tessa.fr" className="text-nude-500 hover:underline">contact@linstant-tessa.fr</a>
+            Pour exercer ces droits, contactez-nous à : <a href="mailto:linstantessa@gmail.com" className="text-nude-500 hover:underline">linstantessa@gmail.com</a>
           </p>
         </section>
 

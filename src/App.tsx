@@ -18,7 +18,7 @@ function InstagramIcon({ size = 18, className }: { size?: number; className?: st
 const CONFIG = {
   instagram: 'https://instagram.com/linstantessa',
   whatsapp:  'https://wa.me/33605572104',
-  email:     'contact@linstant-tessa.fr',
+  email:     'linstantessa@gmail.com',
   location:  'Aix-en-Provence (13)',
   phone:     '+33 6 05 57 21 04',
   planity:   'https://www.planity.com/sc-coiffure-linstant-tessa-13090-aix-en-provence',
