@@ -21,7 +21,7 @@ export default function PolitiqueConfidentialite() {
         <section className="mb-8">
           <h2 className="font-serif text-xl font-semibold text-[#3a2e2a] mb-3 pb-2 border-b border-nude-100">Responsable du traitement</h2>
           <p className="text-[#6b5a54] text-sm leading-relaxed">
-            L'instant Tessa, micro-entreprise de prothésie ongulaire basée à Aix-en-Provence (13).<br />
+            L'instant Tessa, micro-entreprise de prothésie ongulaire basée au 43 Av Mal de Lattre de Tassigny, 13090 Aix-en-Provence.<br />
             Contact : <a href="mailto:linstantessa@gmail.com" className="text-nude-500 hover:underline">linstantessa@gmail.com</a>
           </p>
         </section>

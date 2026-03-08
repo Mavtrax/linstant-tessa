@@ -25,7 +25,7 @@ export default function MentionsLegales() {
             <p><strong className="text-[#3a2e2a]">Statut :</strong> Micro-entreprise</p>
             <p><strong className="text-[#3a2e2a]">Responsable de publication :</strong> Tessa [<span className="italic text-nude-400">Nom de famille à compléter</span>]</p>
             <p><strong className="text-[#3a2e2a]">SIRET :</strong> [<span className="italic text-nude-400">À compléter</span>]</p>
-            <p><strong className="text-[#3a2e2a]">Adresse :</strong> Aix-en-Provence (13)</p>
+            <p><strong className="text-[#3a2e2a]">Adresse :</strong> 43 Av Mal de Lattre de Tassigny, 13090 Aix-en-Provence</p>
             <p><strong className="text-[#3a2e2a]">Email :</strong> <a href="mailto:linstantessa@gmail.com" className="text-nude-500 hover:underline">linstantessa@gmail.com</a></p>
             <p><strong className="text-[#3a2e2a]">Téléphone :</strong> +33 6 05 57 21 04</p>
           </div>
