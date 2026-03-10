@@ -161,9 +161,12 @@ export default function App() {
         <div className="relative z-10 max-w-xl">
           <h1 className="sr-only">L'instant Tessa — Prothésiste ongulaire</h1>
           <img
-            src="/logo1.png"
+            src="/logo1.webp"
             alt="L'instant Tessa — Prothésiste ongulaire"
             className="w-56 sm:w-72 md:w-80 mx-auto mb-6"
+            width="543"
+            height="770"
+            fetchPriority="high"
           />
           <p className="text-[#6b5a54] text-base md:text-lg leading-relaxed mb-10 max-w-md mx-auto">
             Révélez la beauté de vos mains avec des ongles sublimés, du nude élégant au nail art créatif.
