@@ -402,6 +402,16 @@ export default function App() {
         <div className="max-w-5xl mx-auto border-t border-white/10 pt-6 text-center text-xs text-nude-500">
           © {new Date().getFullYear()} L'instant Tessa · Tous droits réservés
         </div>
+        <div className="max-w-5xl mx-auto text-center mt-3">
+          <a
+            href="https://maverick64.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-nude-600/50 hover:text-nude-500 transition-colors"
+          >
+            Réalisé par Maverick Nova
+          </a>
+        </div>
       </footer>
 
       {/* BOUTON WHATSAPP FLOTTANT */}
