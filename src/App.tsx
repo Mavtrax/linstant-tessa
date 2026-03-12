@@ -190,12 +190,11 @@ export default function App() {
       <section className="py-20 px-5 bg-white">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2">
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden">
-              <img
-                src="/realisation6.jpg"
-                alt="Tessa — prothésiste ongulaire"
-                className="w-full h-full object-cover"
-              />
+            <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-peach-light to-nude-200 flex items-center justify-center">
+              <div className="text-center text-nude-400">
+                <Sparkles size={48} className="mx-auto mb-3 opacity-40" />
+                <p className="text-sm opacity-50">Photo de Tessa</p>
+              </div>
             </div>
           </div>
           <div className="w-full md:w-1/2">
