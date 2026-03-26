@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://linstant-tessa.vercel.app/sitemap.xml
+Sitemap: https://www.linstant-tessa.fr/sitemap.xml

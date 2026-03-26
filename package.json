@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npx playwright install chromium && node prerender.mjs",
+    "build:noprerender": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -25,7 +26,10 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.26",
     "globals": "^16.5.0",
+    "playwright": "^1.58.2",
     "postcss": "^8.5.6",
+    "serve": "^14.2.6",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.19",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.56.1",

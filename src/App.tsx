@@ -84,11 +84,11 @@ const SERVICE_CATEGORIES = [
 ]
 
 const GALLERY_PHOTOS = [
-  '/tessa-1.png',
-  '/tessa-2.png',
-  '/tessa-3.png',
-  '/tessa-4.png',
-  '/tessa-5.png',
+  { src: '/tessa-1.png', alt: 'Pose ongles gel nude — L\'instant Tessa, Aix-en-Provence' },
+  { src: '/tessa-2.png', alt: 'Nail art créatif — prothésiste ongulaire Aix-en-Provence' },
+  { src: '/tessa-3.png', alt: 'Vernis semi-permanent mains — L\'instant Tessa' },
+  { src: '/tessa-4.png', alt: 'Manucure french — ongles gel Aix-en-Provence' },
+  { src: '/tessa-5.png', alt: 'Réalisation capsules ongles — nail art Tessa' },
 ]
 
 const HORAIRES = [
@@ -200,13 +200,13 @@ export default function App() {
           <div className="w-full md:w-1/2">
             <p className="text-nude-400 font-serif italic text-sm mb-2 tracking-wider uppercase">À propos</p>
             <h2 className="font-serif text-3xl font-bold text-[#3a2e2a] mb-4 leading-tight">
-              Une expérience beauté personnalisée
+              Prothésiste ongulaire à Aix-en-Provence
             </h2>
             <p className="text-[#6b5a54] leading-relaxed mb-4">
-              Passionnée par l'art de l'ongle depuis plusieurs années, je mets mon savoir-faire au service de votre beauté dans un cadre chaleureux et intime.
+              Passionnée par l'art de l'ongle depuis plusieurs années, je mets mon savoir-faire au service de votre beauté dans un cadre chaleureux et intime, au cœur d'Aix-en-Provence.
             </p>
             <p className="text-[#6b5a54] leading-relaxed mb-6">
-              Chaque pose est réalisée avec soin, des produits de qualité professionnelle et une attention particulière à la santé de vos ongles naturels.
+              Chaque pose — gel, capsules, vernis semi-permanent ou nail art — est réalisée avec soin, des produits de qualité professionnelle et une attention particulière à la santé de vos ongles naturels.
             </p>
             <div className="flex items-center gap-2">
               {[...Array(5)].map((_, i) => (
@@ -223,7 +223,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-nude-400 font-serif italic text-sm mb-2 tracking-wider uppercase">Prestations</p>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#3a2e2a]">Mes services</h2>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#3a2e2a]">Prestations ongulaires à Aix-en-Provence</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {SERVICE_CATEGORIES.map((cat) => (
@@ -260,11 +260,11 @@ export default function App() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#3a2e2a]">Galerie</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {GALLERY_PHOTOS.map((src, i) => (
+            {GALLERY_PHOTOS.map((photo, i) => (
               <div key={i} className="aspect-square rounded-2xl overflow-hidden">
                 <img
-                  src={src}
-                  alt={`Réalisation ongles ${i + 1}`}
+                  src={photo.src}
+                  alt={photo.alt}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
