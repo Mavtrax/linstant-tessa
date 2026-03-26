@@ -85,10 +85,10 @@ const SERVICE_CATEGORIES = [
 
 const GALLERY_PHOTOS = [
   { src: '/tessa-1.png', alt: 'Pose ongles gel nude — L\'instant Tessa, Aix-en-Provence' },
-  { src: '/tessa-2.png', alt: 'Nail art créatif — prothésiste ongulaire Aix-en-Provence' },
+  { src: '/tessa-2.png', alt: 'Pose ongles capsules — prothésiste ongulaire Aix-en-Provence' },
   { src: '/tessa-3.png', alt: 'Vernis semi-permanent mains — L\'instant Tessa' },
   { src: '/tessa-4.png', alt: 'Manucure french — ongles gel Aix-en-Provence' },
-  { src: '/tessa-5.png', alt: 'Réalisation capsules ongles — nail art Tessa' },
+  { src: '/tessa-5.png', alt: 'Réalisation capsules ongles — L\'instant Tessa Aix-en-Provence' },
 ]
 
 const HORAIRES = [
@@ -169,7 +169,7 @@ export default function App() {
             fetchPriority="high"
           />
           <p className="text-[#6b5a54] text-base md:text-lg leading-relaxed mb-10 max-w-md mx-auto">
-            Révélez la beauté de vos mains avec des ongles sublimés, du nude élégant au nail art créatif.
+            Révélez la beauté de vos mains avec des ongles sublimés, du nude élégant aux poses en gel et capsules.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href={CONFIG.planity} className="px-7 py-3.5 rounded-full bg-nude-400 text-white font-medium hover:bg-nude-500 transition-all shadow-md hover:shadow-lg">
@@ -206,7 +206,7 @@ export default function App() {
               Passionnée par l'art de l'ongle depuis plusieurs années, je mets mon savoir-faire au service de votre beauté dans un cadre chaleureux et intime, au cœur d'Aix-en-Provence.
             </p>
             <p className="text-[#6b5a54] leading-relaxed mb-6">
-              Chaque pose — gel, capsules, vernis semi-permanent ou nail art — est réalisée avec soin, des produits de qualité professionnelle et une attention particulière à la santé de vos ongles naturels.
+              Chaque pose — gel, capsules ou vernis semi-permanent — est réalisée avec soin, des produits de qualité professionnelle et une attention particulière à la santé de vos ongles naturels.
             </p>
             <div className="flex items-center gap-2">
               {[...Array(5)].map((_, i) => (
