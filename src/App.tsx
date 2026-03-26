@@ -404,7 +404,7 @@ export default function App() {
         </div>
         <div className="max-w-5xl mx-auto text-center mt-3">
           <a
-            href="https://maverick64.vercel.app/"
+            href="https://maverick64.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-nude-600/50 hover:text-nude-500 transition-colors"
