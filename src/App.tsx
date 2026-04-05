@@ -193,8 +193,10 @@ export default function App() {
             <div className="aspect-[4/5] rounded-3xl overflow-hidden">
               <img
                 src="/presentationimage.png"
-                alt="Photo de Tessa"
+                alt="Photo de Tessa, prothésiste ongulaire à Aix-en-Provence"
                 className="w-full h-full object-cover"
+                width="600"
+                height="750"
               />
             </div>
           </div>
@@ -258,7 +260,7 @@ export default function App() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-nude-400 font-serif italic text-sm mb-2 tracking-wider uppercase">Réalisations</p>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#3a2e2a]">Galerie</h2>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#3a2e2a]">Réalisations ongulaires à Aix-en-Provence</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {GALLERY_PHOTOS.map((photo, i) => (

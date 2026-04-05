@@ -12,6 +12,7 @@
     <meta name="description" content="L'instant Tessa, prothésiste ongulaire à Aix-en-Provence. Pose d'ongles en gel, capsules, vernis semi-permanent et manucure. Prenez rendez-vous par email ou WhatsApp." />
     <meta name="keywords" content="prothésiste ongulaire, ongles gel, vernis semi-permanent, capsules, manucure, Aix-en-Provence, Bouches-du-Rhône" />
     <link rel="canonical" href="https://www.linstant-tessa.fr/" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
     <!-- Open Graph -->
     <meta property="og:type"        content="website" />
@@ -42,27 +43,127 @@
     <!-- Preload image LCP -->
     <link rel="preload" as="image" href="/logo1.webp" fetchpriority="high" />
 
-    <!-- JSON-LD LocalBusiness -->
+    <!-- JSON-LD NailSalon + Person -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BeautySalon",
-      "name": "L'instant Tessa",
-      "description": "Prothésiste ongulaire à Aix-en-Provence. Pose d'ongles en gel, capsules, vernis semi-permanent.",
-      "url": "https://www.linstant-tessa.fr",
-      "telephone": "+33605572104",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Aix-en-Provence",
-        "postalCode": "13000",
-        "addressCountry": "FR"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "NailSalon",
+        "@id": "https://www.linstant-tessa.fr/#business",
+        "name": "L'instant Tessa",
+        "description": "Prothésiste ongulaire à Aix-en-Provence. Pose d'ongles en gel, capsules, vernis semi-permanent et manucure.",
+        "url": "https://www.linstant-tessa.fr",
+        "telephone": "+33605572104",
+        "email": "linstantessa@gmail.com",
+        "priceRange": "€€",
+        "image": "https://www.linstant-tessa.fr/og-image.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "43 Avenue du Maréchal de Lattre de Tassigny",
+          "addressLocality": "Aix-en-Provence",
+          "postalCode": "13090",
+          "addressRegion": "Bouches-du-Rhône",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.5224,
+          "longitude": 5.4476
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ],
+        "employee": { "@id": "https://www.linstant-tessa.fr/#tessa" },
+        "sameAs": [
+          "https://instagram.com/linstantessa",
+          "https://www.planity.com/sc-coiffure-linstant-tessa-13090-aix-en-provence"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Prestations ongulaires",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "Beauté des mains",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté des mains + Vernis classique" }, "price": "27", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté des mains" }, "price": "20", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limage + Vernis classique" }, "price": "14", "priceCurrency": "EUR" }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Beauté des pieds",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté des pieds + Vernis classique" }, "price": "27", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté des pieds" }, "price": "20", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limage + Vernis classique Pieds" }, "price": "14", "priceCurrency": "EUR" }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Vernis semi-permanent",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté des mains + VSP Mains" }, "price": "32", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dépose + Pose VSP Mains" }, "price": "40", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté des pieds + VSP Pieds" }, "price": "32", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dépose + Pose VSP Pieds" }, "price": "40", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Supplément French" }, "price": "4", "priceCurrency": "EUR" }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Forfaits ongles",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté mains & pieds + VSP" }, "price": "60", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté mains & pieds + Vernis classique" }, "price": "54", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté des mains et des pieds" }, "price": "40", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dépose + Pose VSP Mains + Pieds" }, "price": "76", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dépose + Pose VSP Mains + VSP Pieds" }, "price": "70", "priceCurrency": "EUR" }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Manucure Homme",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté des mains – Pour Lui" }, "price": "20", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Beauté des pieds – Pour Lui" }, "price": "20", "priceCurrency": "EUR" }
+              ]
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Dépose",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dépose VSP Mains" }, "price": "12", "priceCurrency": "EUR" },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dépose VSP Pieds" }, "price": "12", "priceCurrency": "EUR" }
+              ]
+            }
+          ]
+        }
       },
-      "openingHoursSpecification": [
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "17:00" }
-      ],
-      "sameAs": ["https://instagram.com/linstant_tessa"]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://www.linstant-tessa.fr/#tessa",
+        "name": "Tessa",
+        "jobTitle": "Prothésiste ongulaire",
+        "worksFor": { "@id": "https://www.linstant-tessa.fr/#business" },
+        "telephone": "+33605572104",
+        "email": "linstantessa@gmail.com",
+        "sameAs": ["https://instagram.com/linstantessa"]
+      }
+    ]
     </script>
 
     <!-- Robots -->

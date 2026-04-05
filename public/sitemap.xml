@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.linstant-tessa.fr/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.linstant-tessa.fr/og-image.jpg</image:loc>
+      <image:title>L'instant Tessa — Prothésiste ongulaire à Aix-en-Provence</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.linstant-tessa.fr/tessa-1.png</image:loc>
+      <image:title>Pose ongles gel nude — L'instant Tessa, Aix-en-Provence</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.linstant-tessa.fr/tessa-2.png</image:loc>
+      <image:title>Pose ongles capsules — prothésiste ongulaire Aix-en-Provence</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.linstant-tessa.fr/tessa-3.png</image:loc>
+      <image:title>Vernis semi-permanent mains — L'instant Tessa</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.linstant-tessa.fr/tessa-4.png</image:loc>
+      <image:title>Manucure french — ongles gel Aix-en-Provence</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.linstant-tessa.fr/tessa-5.png</image:loc>
+      <image:title>Réalisation capsules ongles — L'instant Tessa Aix-en-Provence</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.linstant-tessa.fr/mentions-legales</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.linstant-tessa.fr/confidentialite</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
