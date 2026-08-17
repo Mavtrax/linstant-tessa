@@ -92,9 +92,9 @@ const GALLERY_PHOTOS = [
 ]
 
 const HORAIRES = [
-  { day: 'Lundi – Vendredi', hours: '9h00 – 19h00' },
-  { day: 'Samedi',           hours: '9h00 – 17h00' },
-  { day: 'Dimanche',         hours: 'Fermé' },
+  { day: 'Lundi',          hours: 'Fermé' },
+  { day: 'Mardi – Samedi', hours: '10h00 – 18h30' },
+  { day: 'Dimanche',       hours: 'Fermé' },
 ]
 
 export default function App() {
@@ -171,13 +171,17 @@ export default function App() {
           <p className="text-[#6b5a54] text-base md:text-lg leading-relaxed mb-10 max-w-md mx-auto">
             Révélez la beauté de vos mains avec des ongles sublimés, du nude élégant aux poses en gel et capsules.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 justify-center">
             <a href={CONFIG.planity} className="px-7 py-3.5 rounded-full bg-nude-400 text-white font-medium hover:bg-nude-500 transition-all shadow-md hover:shadow-lg">
               Prendre rendez-vous
             </a>
             <a href={CONFIG.whatsapp} target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full border-2 border-nude-300 text-nude-500 font-medium hover:bg-nude-50 transition-all flex items-center justify-center gap-2">
               <MessageCircle size={16} />
               WhatsApp
+            </a>
+            <a href={CONFIG.instagram} target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-full border-2 border-nude-300 text-nude-500 font-medium hover:bg-nude-50 transition-all flex items-center justify-center gap-2">
+              <InstagramIcon size={16} />
+              Instagram
             </a>
           </div>
         </div>
@@ -206,10 +210,19 @@ export default function App() {
               Prothésiste ongulaire à Aix-en-Provence
             </h2>
             <p className="text-[#6b5a54] leading-relaxed mb-4">
-              Passionnée par l'art de l'ongle depuis plusieurs années, je mets mon savoir-faire au service de votre beauté dans un cadre chaleureux et intime, au cœur d'Aix-en-Provence.
+              L'Instant Tessa, c'est bien plus qu'une prestation.
+            </p>
+            <p className="text-[#6b5a54] leading-relaxed mb-4">
+              J'aime prendre le temps d'échanger, de discuter, de rire et parfois même de se confier.
+            </p>
+            <p className="text-[#6b5a54] leading-relaxed mb-4">
+              Chaque prestation est réalisée avec soin, dans le respect de vos ongles naturels. Je vous conseille également pour en prendre soin au quotidien.
+            </p>
+            <p className="text-[#6b5a54] leading-relaxed mb-4">
+              Le tout dans un cadre intimiste et chaleureux, à l'entrée d'Aix-en-Provence.
             </p>
             <p className="text-[#6b5a54] leading-relaxed mb-6">
-              Chaque pose — gel, capsules ou vernis semi-permanent — est réalisée avec soin, des produits de qualité professionnelle et une attention particulière à la santé de vos ongles naturels.
+              Ici, on prend soin de vos ongles, mais aussi du moment que vous vous accordez.
             </p>
             <div className="flex items-center gap-2">
               {[...Array(5)].map((_, i) => (
