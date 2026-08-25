@@ -228,7 +228,9 @@ export default function App() {
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={18} className="fill-peach-warm text-peach-warm" />
               ))}
-              <span className="text-sm text-[#6b5a54] ml-1">5/5 sur les avis clients</span>
+              <a href={CONFIG.planity} target="_blank" rel="noopener noreferrer" className="text-sm text-[#6b5a54] ml-1 hover:text-nude-500 hover:underline">
+                5/5 sur les avis clients Planity
+              </a>
             </div>
           </div>
         </div>

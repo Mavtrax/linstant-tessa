@@ -57,7 +57,7 @@ export default function MentionsLegales() {
         <section className="mb-8">
           <h2 className="font-serif text-xl font-semibold text-[#3a2e2a] mb-3 pb-2 border-b border-nude-100">Données personnelles</h2>
           <p className="text-[#6b5a54] text-sm leading-relaxed">
-            Ce site ne collecte aucune donnée personnelle automatiquement. Les données transmises via le formulaire de contact (email) sont uniquement utilisées pour répondre à votre demande et ne sont pas partagées avec des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données en contactant :<br />
+            Ce site ne collecte aucune donnée personnelle automatiquement. Les données transmises par email ou WhatsApp sont uniquement utilisées pour répondre à votre demande et ne sont pas partagées avec des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données en contactant :<br />
             <a href="mailto:linstantessa@gmail.com" className="text-nude-500 hover:underline">linstantessa@gmail.com</a>
           </p>
         </section>
